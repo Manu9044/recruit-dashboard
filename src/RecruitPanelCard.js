@@ -35,7 +35,7 @@ function RecruitPanelCard(props) {
     <Droppable droppableId={header.id} type="row-dragging">
       {(rowProvided) => (
         <div ref={rowProvided.innerRef}>
-          <Scrollbars style={{ height: 495 }}>
+          <Scrollbars style={{ height: 515 }}>
             {!loading ? card
               : holderLength.map((a) => (
                 <div className="rounds-card" key={a}>
