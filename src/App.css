@@ -1,38 +1,126 @@
-.App {
+.recruit-container {
+  padding: 20px;
+}
+
+.recruit-column {
+  background: #f5f5f5;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.card-header {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
+  word-spacing: 2px;
+}
+.row-id-btn {
+  margin-bottom: 10px;
+}
+.id {
+  color: #858687;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+background: #ddeafe;
+border: 1px solid #c9dfff;
+color: #5a97f0;
+font-size: 13px;
+border-radius: 4px;
+font-weight: 600;
+padding: 5px 10px;
+margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.left-header {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  margin: 0px 5px 0px 0px !important;
+}
+
+.page-count {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.search {
+  margin-right: 5px;
+}
+
+.rounds-card {
+  background: #ffffff;
+  padding: 14px 6px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.eligable {
+  border-left: 5px solid #afdc82;
+}
+
+.not-eligable {
+  border-left: 5px solid red;
+}
+
+.name {
+  color: #4f4f51;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 14px;
+}
+
+.detail {
+  color: #9f9c9c;
+  font-size: 14px;
+}
+
+.valid {
+  color: #4f4f51;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.droppable-container {
+  display: flex;
+}
+.draggable-column {
+  background: #f5f5f5;
+  padding: 10px 7px;
+  border-radius: 5px;
+  width: 25%;
+  margin-right: 10px;
+} 
+.draggable-column:last-child {
+  margin-right: 0px;
+}
+
+.indicator {
+background-color: rgb(230 234 236); 
+color: rgb(66 94 123); 
+font-weight: normal;
+}
+
+.true {
+  background-color: #01b875 !important;
+  color: white !important;
 }
