@@ -8,7 +8,7 @@ import './App.css';
 
 function RecruitDashboard() {
   const [candidateData, setCandidateData] = useState(data);
-  const [reloading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [tabName, setTabName] = useState('all');
   const courseList = useMemo(() => courseLists, []);
   const [selectedCourse, setselectedCourse] = useState('');
@@ -91,6 +91,7 @@ function RecruitDashboard() {
     setTimeout(() => {
       setLoading(false);
     }, 400);
+    setCandidateData(data)
   }, []);
 
   const reorder = (list, startIndex, endIndex) => {
@@ -172,7 +173,7 @@ function RecruitDashboard() {
         <RecruitPanel
           columnData={columnData}
           filteredList={filteredList}
-          reloading={reloading}
+          loading={loading}
         />
       </DragDropContext>
     </div>
